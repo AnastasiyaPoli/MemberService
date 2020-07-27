@@ -1,5 +1,4 @@
-﻿using MemberService.Api;
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Hosting.Server.Features;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -25,7 +24,7 @@ namespace MemberService.SystemTests.Core
                     options.Listen(IPAddress.Loopback, 5000);
                 })
                 .UseConfiguration(Configuration)
-                .UseSetting("applicationName", "MemberService.Api")
+                //.UseSetting("applicationName", "MemberService.Api")
                 .Build();
         }
 

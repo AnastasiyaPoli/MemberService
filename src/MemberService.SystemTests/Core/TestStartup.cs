@@ -6,7 +6,7 @@ namespace MemberService.SystemTests.Core
 {
     public class TestStartup : Startup
     {
-        public TestStartup(IConfiguration configuration, IWebHostEnvironment environment) 
+        public TestStartup(IConfiguration configuration, IHostingEnvironment environment) 
             : base(configuration, environment)
         {
         }

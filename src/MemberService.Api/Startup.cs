@@ -11,9 +11,9 @@ namespace MemberService.Api
     {
         public IConfiguration Configuration { get; }
 
-        private readonly IWebHostEnvironment _environment;
+        private readonly IHostingEnvironment _environment;
 
-        public Startup(IConfiguration configuration, IWebHostEnvironment environment)
+        public Startup(IConfiguration configuration, IHostingEnvironment environment)
         {
             Configuration = configuration;
             _environment = environment;
@@ -52,7 +52,7 @@ namespace MemberService.Api
 
     public class TestStartupApi : Startup
     {
-        public TestStartupApi(IConfiguration configuration, IWebHostEnvironment environment)
+        public TestStartupApi(IConfiguration configuration, IHostingEnvironment environment)
             : base(configuration, environment)
         {
         }
